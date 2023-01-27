@@ -11,9 +11,9 @@ pipeline {
                     def name = "${params.NAME}"
                     def gender = "${params.GENDER}"
                     if(gender == 'Male') {
-                        sh "echo Hello Mr. ${name}"
+                        
                     } else {
-                        echo "Hello Ms. $name"
+                        sh "echo Hello Mr. ${name}"
                     }
                 }
             }
