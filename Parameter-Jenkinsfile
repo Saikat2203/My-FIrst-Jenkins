@@ -2,7 +2,7 @@ pipeline {
     agent any
     parameters {
         string(name: 'NAME', description: 'Please tell your name')
-        string(gender: 'GENDER', choices: ['Male', 'Female'], description: 'Choose your gender')
+        choice(name: 'GENDER', choices: ['Male', 'Female'], description: 'Choose Gender')
     }
     stages {
         stage('Printing details') {
